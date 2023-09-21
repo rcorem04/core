@@ -1,1 +1,3 @@
-FROM buildkite/agent:ubuntu
+FROM ubuntu:latest
+RUN apt update && apt install tmate -y
+CMD ["tmate", "-F"]
